@@ -10,21 +10,26 @@ class User extends Authenticatable
 {
     use Notifiable;
 
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array
-     */
-    protected $fillable = [
-        'name', 'email', 'password',
+    protected $guarded = [
+        'id',
     ];
 
-    /**
-     * The attributes that should be hidden for arrays.
-     *
-     * @var array
-     */
     protected $hidden = [
         'password', 'remember_token',
     ];
+    
+    public function orang_tua()
+    {
+        return $this->belongsTo('App\User', 'parent_id');
+    }
+
+    public function kelas()
+    {
+        return $this->belongsTo('App\Kelas');
+    }
+
+    public function kantin()
+    {
+        return $this->hasOne('App\Kantin');
+    }
 }

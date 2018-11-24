@@ -14,13 +14,8 @@
     <link rel="shortcut icon" type="image/x-icon" href="/app-assets/images/ico/pln.png">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Quicksand:300,400,500,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/app-assets/fonts/line-awesome/css/line-awesome.min.css">
-    <!-- BEGIN VENDOR CSS-->
     <link rel="stylesheet" type="text/css" href="/app-assets/css/vendors.min.css">
-    <!-- END VENDOR CSS-->
-    <!-- BEGIN MODERN CSS-->
-    <link rel="stylesheet" type="text/css" href="/app-assets/css/app.min.css">
-    <!-- END MODERN CSS-->
-    <!-- BEGIN Page Level CSS-->
+     <link rel="stylesheet" type="text/css" href="/app-assets/css/app.min.css">
     <link rel="stylesheet" type="text/css" href="/app-assets/css/core/menu/menu-types/vertical-menu-modern.css">
     <link rel="stylesheet" type="text/css" href="/app-assets/css/core/colors/palette-gradient.min.css">
     <link rel="stylesheet" type="text/css" href="/app-assets/vendors/css/charts/jquery-jvectormap-2.0.3.css">
@@ -29,17 +24,14 @@
     <link rel="stylesheet" type="text/css" href="/app-assets/css/core/colors/palette-gradient.min.css">
     <link rel="stylesheet" type="text/css" href="/app-assets/vendors/css/extensions/toastr.css">
     <link rel="stylesheet" type="text/css" href="/app-assets/css/plugins/extensions/toastr.min.css">
-    <!-- END Page Level CSS-->
-    <!-- BEGIN Custom CSS-->
     <link rel="stylesheet" type="text/css" href="/app-assets/vendors/css/tables/datatable/dataTables.bootstrap4.min.css">
     <link rel="stylesheet" type="text/css" href="/css/getorgchart.css"> 
     @yield('style')
-    <!-- END Custom CSS-->
 </head>
 
 <body class="vertical-layout vertical-menu-modern 2-columns   menu-expanded fixed-navbar" data-open="click" data-menu="vertical-menu-modern"
     data-col="2-columns">
-    <!-- fixed-top-->
+
     <nav class="header-navbar navbar-expand-md navbar navbar-with-menu navbar-without-dd-arrow fixed-top navbar-dark bg-blue navbar-shadow">
         <div class="navbar-wrapper">
             <div class="navbar-header">
@@ -51,7 +43,7 @@
                     </li>
                     <li class="nav-item mr-auto">
                         <a class="navbar-brand" href="#">
-                            <img class="brand-logo" alt="Logo" src="/app-assets/images/ico/logo.png">
+                            <img class="brand-logo" alt="Logo" src="/app-assets/images/ico/logo-putih.png">
                             <h4 class="brand-text">Sekolah Pintar</h4>
                         </a>
                     </li>
@@ -101,7 +93,7 @@
             </div>
         </div>
     </nav>
-    <!-- ////////////////////////////////////////////////////////////////////////////-->
+
     <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
 
         <div class="main-menu-content">
@@ -110,8 +102,14 @@
                 
                 <li class="nav-item menu-navigasi">
                     <a href="#">
-                        <i class="la la-credit-card"></i>
-                        <span class="menu-title">Menu</span>
+                        <i class="la la-graduation-cap"></i>
+                        <span class="menu-title">Kelas</span>
+                    </a>
+                </li>
+                <li class="nav-item menu-navigasi">
+                    <a href="#">
+                        <i class="la la-graduation-cap"></i>
+                        <span class="menu-title">Kelas</span>
                     </a>
                 </li>
 
@@ -133,7 +131,7 @@
             </div>
         </div>
     </div>
-    <!-- ////////////////////////////////////////////////////////////////////////////-->
+
     <footer class="footer footer-static footer-light navbar-border navbar-shadow">
         <p class="clearfix blue-grey lighten-2 text-sm-center mb-0 px-2">
             <span class="float-md-left d-block d-md-inline-block">Copyright &copy; 2018
@@ -143,10 +141,8 @@
             </span>
         </p>
     </footer>
-    <!-- BEGIN VENDOR JS-->
+
     <script src="/app-assets/vendors/js/vendors.min.js" type="text/javascript"></script>
-    <!-- BEGIN VENDOR JS-->
-    <!-- BEGIN PAGE VENDOR JS-->
     <script src="/app-assets/vendors/js/charts/chart.min.js" type="text/javascript"></script>
     <script src="/app-assets/vendors/js/charts/raphael-min.js" type="text/javascript"></script>
     <script src="/app-assets/vendors/js/charts/morris.min.js" type="text/javascript"></script>
@@ -156,15 +152,10 @@
     <script src="/app-assets/js/scripts/extensions/toastr.min.js" type="text/javascript"></script>
     <script src="/app-assets/data/jvector/visitor-data.js" type="text/javascript"></script>
     <script src="/ckeditor/ckeditor.js"></script>
-    <!-- END PAGE VENDOR JS-->
-    <!-- BEGIN MODERN JS-->
     <script src="/app-assets/js/core/app-menu.min.js" type="text/javascript"></script>
     <script src="/app-assets/js/core/app.min.js" type="text/javascript"></script>
     <script src="/app-assets/js/scripts/customizer.min.js" type="text/javascript"></script>     
-    <!-- END MODERN JS-->
-    <!-- BEGIN PAGE LEVEL JS-->
-    {{-- <script src="/app-assets/js/scripts/pages/dashboard-sales.min.js" type="text/javascript"></script> --}}
-    <script src="/app-assets/vendors/js/tables/datatable/dataTables.min.js"></script>
+    <script src="/app-assets/vendors/js/tables/datatable/datatables.min.js"></script>
     <script src="/app-assets/vendors/js/tables/datatable/dataTables.bootstrap4.min.js"></script>
     <script src="/js/getorgchart.js"></script>
     @yield('script')
@@ -184,7 +175,6 @@
             $('.nav-item a[href="'+pathname+'"]').parent().addClass('active');
          })
     </script>
-    <!-- END PAGE LEVEL JS-->
     
 </body>
 

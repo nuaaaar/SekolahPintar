@@ -14,3 +14,13 @@
 Route::get('/', function () {
     return view('layouts.master-dashboard');
 });
+
+Route::get('login','LoginController@index');
+
+Route::post('signin','LoginController@signin');
+
+Route::get('register','RegisterController@index');
+
+Route::post('register','RegisterController@register');
+
+Route::resource('kelas', 'KelasController');
